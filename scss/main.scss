@@ -1,0 +1,34 @@
+body {
+    background-color: #222831;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}    
+h1 {
+    font-size: 35px;
+}      
+h1 {
+    font-size: 21px;
+    margin-top: 20px;
+}     
+.calcu {
+    width: 15em;
+    height: 25em;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #222831;
+    padding: 10%;
+}      
+input {
+    width: 70%;
+}
+.sec{
+    width: 100%;
+    padding: 5%;
+}
+.sec-but{
+    width: 100%;
+    color: #000;
+}
