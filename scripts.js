@@ -1,10 +1,8 @@
 //
 function Calcular() {
-    const monto = document.querySelector("#monto").value;
-    let meses = document.querySelector("#meses").value
-    let inter = (meses * 0.25);
-    const interes = (monto * inter) / meses;
-    const total = ((monto / meses) + interes).toFixed(2);
-    document.querySelector("#total")
-        alert ("Cuotas de : " + total);
-}
+    const monto = Number(document.querySelector("#monto").value);
+    let meses = Number(document.querySelector("#meses").value);
+    let inter = (0.27 * monto);
+    let total = ((monto + inter) / meses).toFixed(2);
+    alert(`Cuotas de ${total}`);
+}   

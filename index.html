@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,41 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Prueba</title>
 </head>
+
 <head>
     <title>Simulador de prestamo</title>
 </head>
+
 <body>
-    <div class="calcu">
-        <section class="sec">
-        <h1>Calculadora de intereses</h1>
-        <p>1. Ingrese un monto: <br>
-            ($100 - $100000) <br>
-            <input id="monto" type="number">
-        </p>
-        </section>
-        <section class="sec">
-        <p>2. Elija la cantidad de meses <br>
-         <br>
-            <input id="meses" type="number" >
-        </p>
-        </section>
-        <section class="sec-but">
-        <h2 id="total"></h2>
-        <input type="button" onclick="Calcular()" name="boton" >
-        <label for="boton"></label>
-        </section>
+    <div class="box">
+        <div class="calculadora">
+            <div class="calculadora_box">
+                <h1>Calculadora de intereses (27%)</h1>
+                <section class="sec">
+                    <p>Ingrese un monto</p>
+                    <input class="monto" id="monto" type="number" placeholder=" Sin puntos ni comas">
+                    <p>Elija la cantidad de meses <br></p>
+                    <br>
+                    <div class="sec-but">
+                        <select id="meses" class="form-select">
+                            <option value="Cuotas">Cuotas</option>
+                            <option value="3">3</option>
+                            <option value="6">6</option>
+                            <option value="12">12</option>
+                            <option value="18">18</option>
+                            <option value="24">24</option>
+                            <h2 id="total"></h2>
+                        </select>
+                    </div>
+                    <div class="boton">
+                        <input class="calc_button" type="button" onclick="Calcular()" name="boton" value="Calcular">
+                        <label for="boton"></label>
+                    </div>
+                </section>
+            </div>
+        </div>
     </div>
     <script src="./scripts.js"></script>
 </body>
+
 </html>
